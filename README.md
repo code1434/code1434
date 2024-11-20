@@ -1,3 +1,13 @@
-top
-vtgb5yhvbj6unkd8i6m7u dht67mmmmmmmmmmmmmm5i8k68jiuh5uufdujrhfuhr4tnugu4v5yitnhyiu5nytvygi4y5t7y675nvtugtgyunyuytut4ytu4nnyctyrtrybtggvriyuv75yvugyutbgyuygubrtiygvnuitgnyuinygcunygutytviugbytutybgutbgvyutbvyutbrgyiu
-ghutntyvtioyvn
+// Check if the game object is accessible
+if (typeof game !== "undefined") {
+    // Set the coins variable to a very large number
+    game.coins = 999999999999999999999999999999999999999999999999999999999999999999999;  // Replace this with your desired number
+
+    // Assuming there's a function to update the UI or refresh the coin count
+    game.updateCoins();  // This will vary depending on how the game refreshes the UI.
+
+    // Log the new coin count to the console
+    console.log("New coin count: " + game.coins);
+} else {
+    console.log("Game object not found. Ensure you're in a valid game session.");
+}
